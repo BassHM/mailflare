@@ -388,7 +388,7 @@ export default function CalendarPage() {
   const activeEventId = draggedEvent?.id ?? resizingEvent?.id ?? null;
 
   return (
-    <div className={clsx("flex h-full min-h-0 flex-col bg-[#f6f8fc] pl-3 max-md:pl-0 lg:flex-row transition-[gap] duration-200 ease-in-out motion-reduce:transition-none", minimal ? "gap-0" : "gap-3")}>
+    <div className={clsx("flex h-full min-h-0 flex-col bg-[#f4ede0] pl-3 max-md:pl-0 lg:flex-row transition-[gap] duration-200 ease-in-out motion-reduce:transition-none", minimal ? "gap-0" : "gap-3")}>
       <Toaster position="bottom-left" />
       <h1 className="sr-only">{t("account.calendar")}</h1>
       {loading && <RouteLoadingBarPortal />}
@@ -406,7 +406,7 @@ export default function CalendarPage() {
               <ChevronDown className="h-5 w-5 text-neutral-500" />
             </button>
             {monthPickerOpen && monthPickerPos && createPortal(
-              <div ref={monthPickerPopupRef} role="dialog" aria-label={t("calendar.chooseDate")} style={monthPickerPos} className="fixed z-50 w-[448px] max-w-[calc(100vw-24px)] rounded-2xl bg-[#f7f9fc] p-5 shadow-xl ring-1 ring-neutral-200/70">
+              <div ref={monthPickerPopupRef} role="dialog" aria-label={t("calendar.chooseDate")} style={monthPickerPos} className="fixed z-50 w-[448px] max-w-[calc(100vw-24px)] rounded-2xl bg-[#f4ede0] p-5 shadow-xl ring-1 ring-neutral-200/70">
                 <div className="mb-4 flex items-center justify-between gap-3">
                   <h2 className="text-xl font-semibold text-neutral-900">
                     {formatUserDate(pickerMonth, { month: "long", year: "numeric" })}

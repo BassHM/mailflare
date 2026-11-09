@@ -28,13 +28,13 @@ export default function PublicDrivePage({ params }: { params: Promise<{ token: s
 		return () => { active = false; };
 	}, [token, itemId]);
 
-	if (missing) return <main className="flex min-h-dvh items-center justify-center bg-[#f6f8fc] p-6 text-center text-neutral-600">{t("drive.publicNotFound")}</main>;
-	if (!data) return <main className="min-h-dvh bg-[#f6f8fc]" aria-busy="true" />;
+	if (missing) return <main className="flex min-h-dvh items-center justify-center bg-[#f4ede0] p-6 text-center text-neutral-600">{t("drive.publicNotFound")}</main>;
+	if (!data) return <main className="min-h-dvh bg-[#f4ede0]" aria-busy="true" />;
 	const { item, items, path } = data;
 	const isFile = item.kind === "file";
 
 	return (
-		<main className="mx-auto flex min-h-dvh max-w-5xl flex-col bg-[#f6f8fc] p-4 md:p-8">
+		<main className="mx-auto flex min-h-dvh max-w-5xl flex-col bg-[#f4ede0] p-4 md:p-8">
 			<nav className="mb-4 flex flex-wrap items-center gap-1 text-lg text-neutral-800">
 				{path.map((crumb, index) => (
 					<span key={crumb.id} className="flex items-center gap-1">
@@ -45,7 +45,7 @@ export default function PublicDrivePage({ params }: { params: Promise<{ token: s
 				{isFile && <a href={publicContentUrl(token, item.id, true)} className="ml-auto inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"><Download size={16} />{t("drive.download")}</a>}
 			</nav>
 			{isFile ? (
-				<div className="min-h-[70vh] flex-1 rounded-2xl bg-[#202124] p-3"><DrivePreviewBody src={publicContentUrl(token, item.id)} downloadHref={publicContentUrl(token, item.id, true)} contentType={item.contentType} name={item.name} /></div>
+				<div className="min-h-[70vh] flex-1 rounded-2xl bg-[#1f1a17] p-3"><DrivePreviewBody src={publicContentUrl(token, item.id)} downloadHref={publicContentUrl(token, item.id, true)} contentType={item.contentType} name={item.name} /></div>
 			) : (
 				<div className="rounded-2xl bg-white p-2">
 					{items.length === 0 ? <p className="p-10 text-center text-sm text-neutral-500">{t("drive.empty")}</p> : sortDriveItems(items, "name", true).map((entry) => <PublicRow key={entry.id} entry={entry} token={token} onOpen={setItemId} />)}

@@ -8,9 +8,9 @@ export function DrivePreviewBody({ src, downloadHref, contentType, name }: { src
 	const { t } = useLanguage();
 	if (!canPreview(contentType)) {
 		return (
-			<div className="flex h-full flex-col items-center justify-center gap-4 text-sm text-[#e8eaed]">
+			<div className="flex h-full flex-col items-center justify-center gap-4 text-sm text-[#f4ede0]">
 				<p>{t("drive.noPreview")}</p>
-				<a href={downloadHref} className="inline-flex items-center gap-2 rounded-full bg-[#e8eaed] px-4 py-2 font-medium text-[#202124]"><Download size={16} />{t("drive.download")}</a>
+				<a href={downloadHref} className="inline-flex items-center gap-2 rounded-full bg-[#f4ede0] px-4 py-2 font-medium text-[#1f1a17]"><Download size={16} />{t("drive.download")}</a>
 			</div>
 		);
 	}

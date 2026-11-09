@@ -104,7 +104,7 @@ export default function PublicBookingEventPage() {
 		} finally { setSubmitting(false); }
 	}
 
-	return <main className="page-transition-enter min-h-dvh bg-[#f6f8fc] p-4 text-neutral-900 max-sm:px-0 max-sm:pb-0 sm:px-6 lg:h-dvh lg:overflow-hidden lg:pb-0">
+	return <main className="page-transition-enter min-h-dvh bg-[#f4ede0] p-4 text-neutral-900 max-sm:px-0 max-sm:pb-0 sm:px-6 lg:h-dvh lg:overflow-hidden lg:pb-0">
 		<div className="mx-auto max-w-[1500px] lg:flex lg:h-full lg:min-h-0 lg:flex-col">
 			{loading && <RouteLoadingBar />}
 			{selectedSlot && !done ? <button type="button" onClick={() => { setSelectedSlot(null); setError(""); writeBookingPageSelection(selectedDate, null, timeZone, true); }} className="mb-5 inline-flex items-center gap-2 self-start text-sm text-neutral-600 hover:text-blue-700 max-sm:ml-4"><ArrowLeft className="h-4 w-4" />{t("public.backToCalendar")}</button> : <Link href={username ? `/c/${username}` : `/book/${userId}`} className="mb-5 inline-flex items-center gap-2 self-start text-sm text-neutral-600 hover:text-blue-700 max-sm:ml-4"><ArrowLeft className="h-4 w-4" />{t("public.allMeetings")}</Link>}

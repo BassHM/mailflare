@@ -90,7 +90,7 @@ export function LoadingTransition({ children, ready }: LoadingTransitionProps) {
 
 	return (
 		<PageLoadingContext.Provider value={loadingContext}>
-			<div className="relative min-h-dvh bg-[#f6f8fc]">
+			<div className="relative min-h-dvh bg-[#f4ede0]">
 				{showTopLoadingBar && <RouteLoadingBar />}
 				{ready && (
 					<div
@@ -101,7 +101,7 @@ export function LoadingTransition({ children, ready }: LoadingTransitionProps) {
 				)}
 				<div
 					role="status"
-					className={`fixed inset-0 z-[100] flex items-center justify-center bg-[#f6f8fc] transition-opacity duration-300 ${
+					className={`fixed inset-0 z-[100] flex items-center justify-center bg-[#f4ede0] transition-opacity duration-300 ${
 						loaderVisible ? "opacity-100" : "pointer-events-none opacity-0"
 					}`}
 				>

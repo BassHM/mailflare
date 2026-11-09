@@ -4,12 +4,25 @@
 
 :root {
 	--color-neutral-500: #6b6b6b;
-	--background: #f6f8fc;
-	--foreground: #202124;
+	/* tequiodigital: Tailwind's blue scale is remapped to the brand terracota */
+	--color-blue-50: #f6ebe4;
+	--color-blue-100: #ecd9cf;
+	--color-blue-200: #e0c2b3;
+	--color-blue-300: #d5aa98;
+	--color-blue-400: #bd7a61;
+	--color-blue-500: #b26345;
+	--color-blue-600: #a64b2a;
+	--color-blue-700: #884026;
+	--color-blue-800: #6b3522;
+	--color-blue-900: #4d2b1d;
+	--color-teal-600: #2f7f79;
+	--color-amber-600: #d9a441;
+	--background: #f4ede0;
+	--foreground: #1f1a17;
 	--card: #ffffff;
-	--muted: #eef3fb;
-	--border: #dadce0;
-	--primary: #0b57d0;
+	--muted: #e8dcc6;
+	--border: #d8ccb4;
+	--primary: #a64b2a;
 	--primary-foreground: #ffffff;
 }
 
@@ -225,7 +238,7 @@ button {
 /* ── Dark theme ──────────────────────────────────────────────────────────────
    Screens use the Tailwind palette directly (bg-white, text-neutral-900, bg-blue-50…). Rather than
    editing every component, the dark theme remaps the palette variables under .dark: neutrals follow
-   Gmail's dark palette (#202124, #303134, #3c4043, #9aa0a6, #e8eaed…) and accents are inverted
+   Gmail's dark palette (#1f1a17, #2e2520, #42352b, #9aa0a6, #f4ede0…) and accents are inverted
    (50↔950, 100↔900…). The exceptions come right after. The .dark class is set on <html>
    (theme-utils.ts). */
 /* Modal backdrops and other scrims must use `black` (optionally with a `dark:` alpha), never the
@@ -233,81 +246,81 @@ button {
    instead of dimming it. */
 .dark {
 	color-scheme: dark;
-	--background: #202124;
-	--foreground: #e8eaed;
-	--card: #292a2d;
-	--muted: #303134;
-	--border: #3c4043;
-	--primary: #8ab4f8;
-	--primary-foreground: #202124;
-	--color-white: #292a2d;
+	--background: #1f1a17;
+	--foreground: #f4ede0;
+	--card: #261e19;
+	--muted: #2e2520;
+	--border: #42352b;
+	--primary: #d9a441;
+	--primary-foreground: #1f1a17;
+	--color-white: #261e19;
 	--color-black: #000;
-	--color-neutral-50: #303134;
-	--color-neutral-100: #35363a;
-	--color-neutral-200: #3c4043;
+	--color-neutral-50: #2e2520;
+	--color-neutral-100: #33291f;
+	--color-neutral-200: #42352b;
 	--color-neutral-300: #5f6368;
 	--color-neutral-400: #9aa0a6;
 	--color-neutral-500: #a8aeb4;
 	--color-neutral-600: #bdc1c6;
-	--color-neutral-700: #dadce0;
-	--color-neutral-800: #e8eaed;
+	--color-neutral-700: #d8ccb4;
+	--color-neutral-800: #f4ede0;
 	--color-neutral-900: #f1f3f4;
 	--color-neutral-950: #ffffff;
-	--color-gray-50: #303134;
-	--color-gray-100: #35363a;
-	--color-gray-200: #3c4043;
+	--color-gray-50: #2e2520;
+	--color-gray-100: #33291f;
+	--color-gray-200: #42352b;
 	--color-gray-300: #5f6368;
 	--color-gray-400: #80868b;
 	--color-gray-500: #9aa0a6;
 	--color-gray-600: #bdc1c6;
-	--color-gray-700: #dadce0;
-	--color-gray-800: #e8eaed;
+	--color-gray-700: #d8ccb4;
+	--color-gray-800: #f4ede0;
 	--color-gray-900: #f1f3f4;
 	--color-gray-950: #ffffff;
-	--color-stone-50: #303134;
-	--color-stone-100: #35363a;
-	--color-stone-200: #3c4043;
+	--color-stone-50: #2e2520;
+	--color-stone-100: #33291f;
+	--color-stone-200: #42352b;
 	--color-stone-300: #5f6368;
 	--color-stone-400: #80868b;
 	--color-stone-500: #9aa0a6;
 	--color-stone-600: #bdc1c6;
-	--color-stone-700: #dadce0;
-	--color-stone-800: #e8eaed;
+	--color-stone-700: #d8ccb4;
+	--color-stone-800: #f4ede0;
 	--color-stone-900: #f1f3f4;
 	--color-stone-950: #ffffff;
-	--color-zinc-50: #303134;
-	--color-zinc-100: #35363a;
-	--color-zinc-200: #3c4043;
+	--color-zinc-50: #2e2520;
+	--color-zinc-100: #33291f;
+	--color-zinc-200: #42352b;
 	--color-zinc-300: #5f6368;
 	--color-zinc-400: #80868b;
 	--color-zinc-500: #9aa0a6;
 	--color-zinc-600: #bdc1c6;
-	--color-zinc-700: #dadce0;
-	--color-zinc-800: #e8eaed;
+	--color-zinc-700: #d8ccb4;
+	--color-zinc-800: #f4ede0;
 	--color-zinc-900: #f1f3f4;
 	--color-zinc-950: #ffffff;
-	--color-slate-50: #303134;
-	--color-slate-100: #35363a;
-	--color-slate-200: #3c4043;
+	--color-slate-50: #2e2520;
+	--color-slate-100: #33291f;
+	--color-slate-200: #42352b;
 	--color-slate-300: #5f6368;
 	--color-slate-400: #80868b;
 	--color-slate-500: #9aa0a6;
 	--color-slate-600: #bdc1c6;
-	--color-slate-700: #dadce0;
-	--color-slate-800: #e8eaed;
+	--color-slate-700: #d8ccb4;
+	--color-slate-800: #f4ede0;
 	--color-slate-900: #f1f3f4;
 	--color-slate-950: #ffffff;
-	--color-blue-50: #2c3d57;
-	--color-blue-100: #33486a;
-	--color-blue-200: oklch(42.4% 0.199 265.638);
-	--color-blue-300: oklch(48.8% 0.243 264.376);
-	--color-blue-400: oklch(54.6% 0.245 262.881);
-	--color-blue-500: oklch(62.3% 0.214 259.815);
-	--color-blue-600: oklch(70.7% 0.165 254.624);
-	--color-blue-700: oklch(80.9% 0.105 251.813);
-	--color-blue-800: oklch(88.2% 0.059 254.128);
-	--color-blue-900: oklch(93.2% 0.032 255.585);
-	--color-blue-950: oklch(97% 0.014 254.604);
+	--color-blue-50: #3a2a21;
+	--color-blue-100: #4a3226;
+	--color-blue-200: #6b3522;
+	--color-blue-300: #884026;
+	--color-blue-400: #a64b2a;
+	--color-blue-500: #b26345;
+	--color-blue-600: #d5946f;
+	--color-blue-700: #e0b295;
+	--color-blue-800: #ecd0bc;
+	--color-blue-900: #f4e4d8;
+	--color-blue-950: #faf1ea;
 	--color-red-50: oklch(25.8% 0.092 26.042);
 	--color-red-100: oklch(39.6% 0.141 25.723);
 	--color-red-200: oklch(44.4% 0.177 26.899);
@@ -481,8 +494,8 @@ button {
 /* Dark chips with white text (tooltip, compose header): the chip turns light, the text turns dark */
 .dark .bg-neutral-900.text-white, .dark .bg-neutral-800.text-white, .dark .bg-neutral-950.text-white { color: var(--color-neutral-50); }
 /* Buttons and highlights with white text keep their original saturated background, not the inverted one */
-.dark .bg-blue-600 { background-color: oklch(54.6% 0.245 262.881); }
-.dark .bg-blue-700, .dark .hover\:bg-blue-700:hover { background-color: oklch(48.8% 0.243 264.376); }
+.dark .bg-blue-600 { background-color: #b26345; }
+.dark .bg-blue-700, .dark .hover\:bg-blue-700:hover { background-color: #a64b2a; }
 .dark .bg-red-600 { background-color: oklch(57.7% 0.245 27.325); }
 .dark .bg-red-700, .dark .hover\:bg-red-700:hover { background-color: oklch(50.5% 0.213 27.518); }
 .dark .bg-green-600 { background-color: oklch(62.7% 0.194 149.214); }
@@ -492,19 +505,19 @@ button {
 .dark .bg-pink-600 { background-color: oklch(59.2% 0.249 0.584); }
 .dark .bg-orange-600 { background-color: oklch(64.6% 0.222 41.116); }
 /* Fixed-hex backgrounds (page, panels) and their hover: variants (inbox rows, mailbox selector) */
-.dark .bg-\[\#f6f8fc\], .dark .bg-\[\#f7f9fc\] { background-color: #202124; }
-.dark .bg-\[\#f2f6fc\], .dark .bg-\[\#f1f4fa\], .dark .bg-\[\#f0f3f9\] { background-color: #303134; }
-.dark .bg-\[\#eef3fb\], .dark .bg-\[\#eaf1fb\], .dark .bg-\[\#e6ecf6\] { background-color: #383a3e; }
-.dark .hover\:bg-\[\#f2f6fc\]:hover,
-.dark .bg-\[\#f2f6fc\] { background-color: #35363a; }
-.dark .hover\:bg-\[\#e6ecf6\]:hover { background-color: #3c4043; }
+.dark .bg-\[\#f4ede0\], .dark .bg-\[\#f4ede0\] { background-color: #1f1a17; }
+.dark .bg-\[\#efe6d6\], .dark .bg-\[\#efe6d6\], .dark .bg-\[\#efe6d6\] { background-color: #2e2520; }
+.dark .bg-\[\#e8dcc6\], .dark .bg-\[\#e8dcc6\], .dark .bg-\[\#e2d3b8\] { background-color: #382d24; }
+.dark .hover\:bg-\[\#efe6d6\]:hover,
+.dark .bg-\[\#efe6d6\] { background-color: #33291f; }
+.dark .hover\:bg-\[\#e2d3b8\]:hover { background-color: #42352b; }
 /* Soft shadows turn dark */
 .dark .shadow-neutral-200, .dark .shadow-neutral-300 { --tw-shadow-color: rgb(0 0 0 / 0.6); }
 /* HTML emails assume a white background: keep them on light "paper" inside the dark theme */
 .dark .email-body {
 	color-scheme: light;
 	/* background: #fff; */
-	/* color: #202124; */
+	/* color: #1f1a17; */
 	border-radius: 0.75rem;
 	padding: 1rem;
 }

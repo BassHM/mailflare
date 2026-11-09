@@ -1,14 +1,14 @@
 const avatarColors = [
-	{ background: "#FFCDD2", foreground: "#202124" },
-	{ background: "#F8BBD0", foreground: "#202124" },
-	{ background: "#E1BEE7", foreground: "#202124" },
-	{ background: "#C5CAE9", foreground: "#202124" },
-	{ background: "#BBDEFB", foreground: "#202124" },
-	{ background: "#B2DFDB", foreground: "#202124" },
-	{ background: "#C8E6C9", foreground: "#202124" },
-	{ background: "#FFE0B2", foreground: "#202124" },
-	{ background: "#D7CCC8", foreground: "#202124" },
-	{ background: "#CFD8DC", foreground: "#202124" },
+	{ background: "#FFCDD2", foreground: "#1f1a17" },
+	{ background: "#F8BBD0", foreground: "#1f1a17" },
+	{ background: "#E1BEE7", foreground: "#1f1a17" },
+	{ background: "#C5CAE9", foreground: "#1f1a17" },
+	{ background: "#BBDEFB", foreground: "#1f1a17" },
+	{ background: "#B2DFDB", foreground: "#1f1a17" },
+	{ background: "#C8E6C9", foreground: "#1f1a17" },
+	{ background: "#FFE0B2", foreground: "#1f1a17" },
+	{ background: "#D7CCC8", foreground: "#1f1a17" },
+	{ background: "#CFD8DC", foreground: "#1f1a17" },
 ];
 
 export function getAvatarColorStyle(identity: string): { backgroundColor: string; color: string } {

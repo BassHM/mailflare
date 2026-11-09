@@ -42,7 +42,7 @@ export default async function HomePage() {
 
   return (
     <HomeAuthProvider initialUser={initialUser}>
-    <div className="min-h-dvh bg-[#f6f8fc] text-neutral-900">
+    <div className="min-h-dvh bg-[#f4ede0] text-neutral-900">
       <header className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
@@ -89,7 +89,7 @@ export default async function HomePage() {
 
           <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-neutral-100 shadow-[0_24px_70px_-45px_rgba(30,64,175,0.55)]">
             <div className="grid h-full min-h-[520px] grid-cols-[176px_1fr] bg-white">
-              <aside className="hidden flex-col gap-2 bg-[#f6f8fc] px-3 py-5 sm:flex">
+              <aside className="hidden flex-col gap-2 bg-[#f4ede0] px-3 py-5 sm:flex">
                 <div className="mb-4 flex items-center gap-3 px-3 text-neutral-700">
                   <Inbox className="h-5 w-5" />
                   <span className="font-semibold">{t("home.mockMail")}</span>
@@ -124,8 +124,8 @@ export default async function HomePage() {
               </aside>
 
               <div className="col-span-2 flex min-w-0 flex-col sm:col-span-1">
-                <div className="flex h-16 items-center gap-3 bg-[#f6f8fc] px-4">
-                  <div className="flex h-12 flex-1 items-center gap-3 rounded-full bg-[#eaf1fb] px-4 text-neutral-600">
+                <div className="flex h-16 items-center gap-3 bg-[#f4ede0] px-4">
+                  <div className="flex h-12 flex-1 items-center gap-3 rounded-full bg-[#e8dcc6] px-4 text-neutral-600">
                     <Search className="h-5 w-5" />
                     <span className="text-[15px]">{t("search.mail")}</span>
                   </div>
@@ -152,7 +152,7 @@ export default async function HomePage() {
                     {heroMessages.map((message) => (
                       <div
                         key={message.sender}
-                        className="grid min-h-14 grid-cols-[28px_minmax(112px,180px)_1fr_auto] items-center gap-3 px-5 text-sm hover:bg-[#f2f6fc]"
+                        className="grid min-h-14 grid-cols-[28px_minmax(112px,180px)_1fr_auto] items-center gap-3 px-5 text-sm hover:bg-[#efe6d6]"
                       >
                         <message.icon className="h-4 w-4 text-neutral-300" />
                         <span className="truncate font-semibold text-neutral-900">
