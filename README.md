@@ -1,3 +1,5 @@
+> **tequiodigital fork.** This is a modified version of [Mailflare](https://github.com/hieunc229/mailflare) by Hieu Nguyen, licensed under the GNU AGPL-3.0 (see `LICENSE`). Changes made on 2026-11-09 by tequiodigital: the Pro/Team license checks are disabled (accounts, shared mailboxes, forwarding and branding are always available), the interface uses the tequiodigital palette, name and logo, and the home page only offers logging in. The original copyright notices are kept. Source of the running version: https://github.com/TequioDigital/mailflare/tree/tequio-fork
+
 <img src="public/icon-192.png" alt="Mailflare" width="96" />
 
 

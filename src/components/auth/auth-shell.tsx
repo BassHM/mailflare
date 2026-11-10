@@ -88,6 +88,10 @@ export function AuthShell({
               {footer}
             </div>
           )}
+          <div className="mt-6 text-xs text-neutral-500">
+            <a href="https://github.com/TequioDigital/mailflare/tree/tequio-fork" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Source</a>
+            {" · "}Modified version of Mailflare (AGPL-3.0)
+          </div>
           <div className="mt-auto pt-8 lg:hidden">
             <LanguageSelector variant="text" />
           </div>

@@ -211,6 +211,10 @@ export default async function HomePage() {
 					</div>
 				</section> */}
       </main>
+      <footer className="px-6 py-6 text-center text-xs text-neutral-500">
+        <a href="https://github.com/TequioDigital/mailflare/tree/tequio-fork" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Source</a>
+        {" · "}Modified version of Mailflare (AGPL-3.0)
+      </footer>
     </div>
     </HomeAuthProvider>
   );
